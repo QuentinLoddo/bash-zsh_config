@@ -25,6 +25,9 @@ alias l="ls"
 alias cs="cdls"
 alias cl="clr"
 alias clib="clib.sh"
+alias iwtd="echo I WANT TO DIE, HUMAN ARE STUPID"
+alias int="echo 2147483647"
+alias int_min="echo -2147483648"
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
