@@ -1,11 +1,12 @@
-on: push
-  run: date
+name: wtist
 
-bash-exemple:
-  run-on: fedora-latest
-  env:
-    MY_NAME: name
-  step:
-    - name: bash-version
-        run: date
-        # id: random-color-generator
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+defaults:
+  run:
+    shell: bash
+    cmd: date
