@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3.0.0
         with:
-          ssh-key: git@github.com:EpitechPromo2026/B-CPE-200-BDX-2-1-dante-ethan.hary.git
+          repository: /home/hidekashi/tek1/dante/B-CPE-200-BDX-2-1-dante-ethan.hary/
           ref: origin/main
       - run: du -skh --exclude=".git"
