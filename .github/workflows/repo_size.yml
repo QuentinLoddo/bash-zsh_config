@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3.0.0
         with:
-          name: ../../../tetris/B-PSU-200-BDX-2-1-tetris-romain.delaruelle/
+          ssh-key: git@github.com:EpitechPromo2026/B-CPE-200-BDX-2-1-dante-ethan.hary.git
           ref: origin/main
       - run: du -skh --exclude=".git"
