@@ -1,3 +1,6 @@
+on: push
+  run: date
+
 bash-exemple:
   run-on: fedora-latest
   env:
