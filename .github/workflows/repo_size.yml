@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3.0.0
         with:
-          name: /bash-zsh_config
+          path: /bash-zsh_config
           ref: origin/main
       - run: du -skh --exclude=".git"
