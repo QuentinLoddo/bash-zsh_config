@@ -4,7 +4,4 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.0.0
-        with:
-          path: git@github.com:QuentinLoddo/remember.git
-      - run: du -skh --exclude=".git"
+      - run: date
