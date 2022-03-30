@@ -6,5 +6,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3.0.0
         with:
-          path: git@github.com:QuentinLoddo/remember.git
+          path: /home/hidekashi/tek1/soko/B-PSU-200-BDX-2-1-mysokoban-quentin.loddo/
       - run: du -skh --exclude=".git"
