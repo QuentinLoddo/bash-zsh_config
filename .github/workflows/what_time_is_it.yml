@@ -1,12 +1,7 @@
-name: wtist
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-
-defaults:
-  run:
-    shell: bash
-    cmd: date
+name: wtisit
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: date
