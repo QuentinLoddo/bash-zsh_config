@@ -1,3 +1,8 @@
- - name: Get date of push
+bash-exemple:
+  run-on: fedora-latest
+  env:
+    MY_NAME: name
+  step:
+    - name: bash-version
         run: date
         # id: random-color-generator
