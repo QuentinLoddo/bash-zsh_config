@@ -5,7 +5,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: date
-      - uses: actions/checkout@v3.0.0
-        with:
-          path: git@github.com:QuentinLoddo/remember.git
-      - run: du -skh --exclude=".git"
