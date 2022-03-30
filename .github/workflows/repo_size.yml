@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3.0.0
         with:
-          path: /bash-zsh_config
+          path:  cs ../../../tetris/B-PSU-200-BDX-2-1-tetris-romain.delaruelle/
           ref: origin/main
       - run: du -skh --exclude=".git"
