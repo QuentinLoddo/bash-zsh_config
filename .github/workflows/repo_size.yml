@@ -1,11 +1,15 @@
-name: GitHub Actions Demo
+name: Mirroring
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
+  Mirroring:
+    run-ons: ubuntu-latest
     steps:
       - uses: actions/checkout@v3.0.0
         with:
-          repository: /home/hidekashi/tek1/dante/B-CPE-200-BDX-2-1-dante-ethan.hary/
-          ref: origin/main
-      - run: du -skh --exclude=".git"
+          fetch-depth: 0
+      - uses: pixta-dev/repository-mirroring-action@v1
+        with:
+          target_repo_url:
+            git@github.com:QuentinLoddo/remember.git
+          ssh_private_key:
+            ${{}}
