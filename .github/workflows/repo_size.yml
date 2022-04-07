@@ -2,7 +2,7 @@ name: Mirroring
 on: [push]
 jobs:
   Mirroring:
-    run-ons: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3.0.0
         with:
