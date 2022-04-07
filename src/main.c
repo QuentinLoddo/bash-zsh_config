@@ -10,6 +10,7 @@ int main(int ac, char **av)
     int i = 0;
 
 
+    printf("test");
     for (int j = 15; i < j; i += 1){
         printf("%i\n", i);
     }
