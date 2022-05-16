@@ -45,7 +45,11 @@ function cpl {
 function clear_pwd {
    clear && ls && pwd
 }
+function return_error {
+    echo $?
+}
 
+alias e="return_error"
 alias c="clear_pwd"
 alias mkr="mkdir"
 alias p="pwd"
