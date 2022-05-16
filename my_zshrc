@@ -1,3 +1,4 @@
+# Created by newuser for 5.8.1
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -18,6 +19,10 @@ function cpl {
 function clear_pwd {
     clear && ls
 }
+function exit_output {
+        echo $?&&echo is the error output of your previous compilation
+}
+alias e="exit_output"
 alias c="clear_pwd"
 alias mkr="mkdir"
 alias p="pwd"
@@ -25,7 +30,7 @@ alias l="ls"
 alias cs="cdls"
 alias cl="clr"
 alias clib="clib.sh"
-alias iwtd="echo I WANT TO DIE, HUMAN ARE STUPID"
+alias iwtd="echo the life could be better if im not alive"
 alias int="echo 2147483647"
 alias int_min="echo -2147483648"
 
@@ -33,7 +38,7 @@ alias int_min="echo -2147483648"
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="root/.oh-my-zsh"
+export ZSH="/home/hidekashi/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
